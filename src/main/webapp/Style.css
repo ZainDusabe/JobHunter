@@ -1,0 +1,823 @@
+@charset "ISO-8859-1";
+
+body {
+    margin: 0;
+    color: dark;
+    background: #e5e4e4;
+    font: 600 16px/18px 'Open Sans', sans-serif;
+}
+
+.login-box {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    max-width: 525px;
+    min-height: 800px;
+    margin-left: 400px;
+    margin-top: -10px;
+    position: relative;
+    background: #fefafa;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+
+}
+
+.login-snip {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 90px 70px 50px 70px;
+}
+::placeholder{
+	color: #0074d9;
+	text-align: center;
+}
+.login-snip .login,
+.login-snip .sign-up-form {
+    top: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .4s linear
+}
+
+.login-snip .sign-in,
+.login-snip .sign-up,
+.login-space .group .check {
+    display: none
+}
+
+.login-snip .tab,
+.login-space .group .label,
+.login-space .group .button {
+    text-transform: uppercase;
+}
+
+.login-snip .tab {
+    font-size: 22px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+    margin: 0 15px 10px 0;
+    display: inline-block;
+    border-bottom: 2px solid transparent
+}
+
+.login-snip .sign-in:checked+.tab,
+.login-snip .sign-up:checked+.tab {
+    color: #0074d9;
+    border-color: #1161ee
+}
+
+.login-space {
+    min-height: 600px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.login-space .group {
+    margin-bottom: 15px;
+    background: transparent;
+}
+
+
+.login-space .group .label,
+.login-space .group .input,
+.login-space .group .button {
+    width: 100%;
+    color: #0074d9;
+    display: block
+}
+.login-space .group .input{
+	border-top: none;
+	border-left: none;
+	border-right: none;	
+    padding: 15px 20px;
+    border-bottom: 2px solid #0074d9;
+    background: transparent;
+    text-align: center;
+}
+.login-space .group .button {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: #0074d9;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.login-space .group input[data-type="password"] {
+    text-security: circle;
+    -webkit-text-security: circle
+}
+
+.login-space .group {
+    color: #aaa;
+    font-size: 12px
+}
+
+.login-space .group .button {
+    background: #e5e4e4;
+}
+
+.login-space .group label .icon {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: inline-block;
+    background: rgba(255, 255, 255, .1)
+}
+
+.login-space .group label .icon:before {
+    left: 3px;
+    width: 5px;
+    bottom: 6px;
+    transform: scale(0) rotate(0)
+}
+
+.login-space .group label .icon:after {
+    top: 6px;
+    right: 0;
+    transform: scale(0) rotate(0)
+}
+
+.login-space .group .check:checked+label {
+    color: #ff7200
+}
+
+.login-space .group .check:checked+label .icon {
+    background: #1161ee
+}
+
+.login-space .group .icon:before {
+    transform: scale(1) rotate(45deg)
+}
+
+.login-space .group .icon:after {
+    transform: scale(1) rotate(-45deg)
+}
+
+.login-snip .sign-in:checked+.tab+.sign-up+.tab+.login-space .login {
+    transform: rotate(0)
+}
+
+.login-snip .sign-up:checked+.tab+.login-space .sign-up-form {
+    transform: rotate(0)
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    display: table
+}
+
+.clearfix:after {
+    clear: both;
+    display: block
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.hr {
+    height: 2px;
+    margin: 60px 0 50px 0;
+    background: #0074d9;
+}
+
+.foot {
+    text-align: center
+}
+
+.card {
+    width: 500px;
+    left: 100px;
+
+}
+
+::placeholder {
+    color: #b3b3b3
+}
+
+
+
+
+
+
+
+
+
+.main{
+    width: 100;
+ 
+ 	background: #091235;
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.header_banner{
+	background-color:#0074d9;
+	height: 10vh ;
+	width: 100;
+	background-position: center;
+	
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.icon2{
+    width: 200px;
+    height: 70px;
+}
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    margin-top: 5px;
+}
+.logo2{
+    color: #ff7200;
+    font-size: 20px;
+    font-family: Arial;
+    float: left;
+    margin-top: 5px;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+    display: flex;
+    color: #ff7200;
+}
+
+.menu a{
+	color: #ff7200;
+	text-decoration: none;
+}
+.menu a:hover{
+	color: #ff7200;
+}
+
+
+.menulink{
+	margin-top: 20px;
+	margin-left: 40px;
+}
+.dropdown{
+	margin-top: 20px;
+	margin-left:40px;
+}
+
+.dropdown_content{
+	display: none;
+	position: absolute;
+	background-color: #0074d9;
+	min-width: 100px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index:1;
+	cursor: pointer;
+	color: #ff7200;
+}
+.dropdown:hover .dropdown_content{
+	display: block;
+	
+}
+
+.dropdown:hover .dropdown_content a{
+	display: flex;
+	margin-top:20px;
+}
+
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 250px;
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 190px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #ff7200;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #ff7200;
+    border-left: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #ff7200;
+    position: relative;
+    margin-top: 100px;
+}
+ .homepage_paragraph{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.content h1{
+    font-family: 'Times New Roman';
+    
+    padding-left: 20px;
+    letter-spacing: 1px;
+}
+
+
+.divhome_footer{
+	width: 100;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(bkg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.content_img_mover{
+	width: 900px;
+	height:100%;
+	background: cyan;
+}
+
+.content_img_mover img{
+	width:100;
+	height:100;
+}
+
+
+
+.content span{
+    color: #ff7200;
+    font-size: 60px
+}
+.signinform{
+    width: 300px;
+    height: 380px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    position: absolute;
+    top: -20px;
+    left: 840px;
+    border-radius: 5px 0px 5px 0px;
+    padding: 0px;
+    margin-top: -20px;
+}
+.signinform h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    margin: 5px;
+    padding: 8px;
+ 
+}
+.signinform input{
+    width: 240px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
+    position: relative;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #ff7200;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.signinform input:hover{
+    border-bottom: 1px solid #afafae;
+  	color:#ff7200;
+    transform: scale(1.12);
+    
+}
+.signinform input:focus{
+    outline: none;
+
+}
+::placeholder{
+    font-family: Arial;
+}
+.login_btn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ff7200;
+    margin-left: 20px;
+}
+.login_btn a{
+    text-decoration: none;
+    color: #0074d9;
+}
+.login_btn:hover{
+    background: #ff7200;
+    font-weight: bold;
+    color: #ff7200;
+}
+.no_account_link{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.no_account_link a{
+    color: #ff7200;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.no_account_link a:hover{
+    color: #BFD7ED;
+}
+.login_linkof_email a{
+    text-decoration: none;
+    margin-left: 70px;
+    color: #ff7200;
+    font-weight: bold;
+}
+.login_linkof_email a:hover{
+    color: #BFD7ED;
+}
+.login_icons_for_medias{
+    text-decoration: none;
+    color: #ff7200;
+}
+.login_icons_for_medias ion-icon{
+    color: #ff7200;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.login_icons_for_medias ion-icon:hover{
+    color: #ff7200;
+
+}
+
+
+.content_for_Regpage{
+    width: 300px;
+    height: 550px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    position: relative;
+    top: -20px;
+    left: 840px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0px;
+    margin-left: -370px;
+    margin-top: 50px;
+}
+
+.content_for_Regpage .title_for_signup{
+    width: 300px;
+    height: 40px;
+    border: none;
+    background: #ff7200;
+    font-size: 28px;
+    cursor: pointer;
+    color: #ff7200;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+
+.user-details input{
+    width: 240px;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+    position: relative;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    tect-color: #ff7200;
+}
+
+
+
+.user-details input:hover{
+    border-bottom: 1px solid #afafae;
+    border-top: 1px solid #afafae;
+    transform: scale(1.12);
+}
+
+
+
+.button_Registrationform_page input{
+    width: 240px;
+    height: 30px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #000;
+    margin-left: 20px;
+}
+.button_Registrationform_page input:hover{
+    background: #ff7200;
+    color: #ff7200;
+}
+
+
+
+
+/** =========   codes for user Dashboard **/
+
+.body_of_dashboard{
+	background: #ff7200;
+	
+}
+
+.userprofile{
+	background: blue;
+	width: 20;
+	height:350px;
+		position: relative;
+}
+.usercontents{
+	width: 80;
+	height:350px;
+	background: skyblue;
+	display: flex;
+	position: relative;
+}
+
+
+
+/** End codes for user Dashboard **/
+
+/** =========   codes for Dash board **/
+
+/** =========   end codes for dash board -->**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Template-specific stuff
+ *
+ * Customizations just for the template; these are not necessary for anything
+ * with disabling the responsiveness.
+ */
+
+/* Account for fixed navbar */
+body {
+  min-width: 970px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+/* Don't let the lead text change font-size. */
+.lead {
+  font-size: 16px;
+}
+
+/* Finesse the page header spacing */
+.page-header {
+  margin-bottom: 30px;
+}
+.page-header .lead {
+  margin-bottom: 10px;
+}
+
+
+/* Non-responsive overrides
+ *
+ * Utilitze the following CSS to disable the responsive-ness of the container,
+ * grid system, and navbar.
+ */
+
+/* Reset the container */
+.container {
+  width: 970px;
+  max-width: none !important;
+}
+
+/* Demonstrate the grids */
+.col-xs-4 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
+}
+
+.container .navbar-header,
+.container .navbar-collapse {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* Always float the navbar header */
+.navbar-header {
+  float: left;
+}
+
+/* Undo the collapsing navbar */
+.navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+}
+
+.navbar-toggle {
+  display: none;
+}
+.navbar-collapse {
+  border-top: 0;
+}
+
+.navbar-brand {
+  margin-left: -15px;
+}
+
+/* Always apply the floated nav */
+.navbar-nav {
+  float: left;
+  margin: 0;
+}
+.navbar-nav > li {
+  float: left;
+}
+.navbar-nav > li > a {
+  padding: 15px;
+}
+
+/* Redeclare since we override the float above */
+.navbar-nav.navbar-right {
+  float: right;
+}
+
+/* Undo custom dropdowns */
+.navbar .navbar-nav .open .dropdown-menu {
+  position: absolute;
+  float: left;
+  background-color: #ff7200;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-width: 0 1px 1px;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #333;
+}
+.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar .navbar-nav .open .dropdown-menu > .active > a,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #ff7200 !important;
+  background-color: #428bca !important;
+}
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  color: #999 !important;
+  background-color: transparent !important;
+}
+
+
+.table_to_post{
+	border: none;
+	margin-top: 50px; 
+
+	float: left;
+	margin-left: 300px;
+	width: 200px;
+	height: 300px;
+	background: #e3dfdf;
+	
+	font-weight: bold;
+	color: dark;
+
+}
+.table_to_post input{
+	margin-left: 25px;
+	height: 30px;
+	width: 300px;
+	border: 1px solid;
+	position: center;
+	border-color: #0074d9;
+
+
+}
+
+.table_to_post textarea{
+	margin-left: 25px;
+	width: 300px;
+	height: 70px;
+	resize:none;
+	border-color: #0074d9;
+	
+
+}
+.table_to_post span{
+	margin-left:30px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: Aria;
+	
+	
+}
